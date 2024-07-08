@@ -454,41 +454,27 @@ background-image: linear-gradient(90deg,#6379FF,#D737D7);
 
 
 /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
 .loader {
-  width: 20px;
+  width: 50px;
   aspect-ratio: 1;
-  border-radius: 50%;
-  background: #8F8F8F;
-  box-shadow: 0 0 0 0 #8C8C8C69;
-  animation: l2 1.5s infinite linear;
+  --_c:no-repeat radial-gradient(farthest-side,#4FCE59 93%,#00000000);
+  background: 
+    var(--_c) top,
+    var(--_c) left,
+    var(--_c) right,
+    var(--_c) bottom;
+  background-size: 12px 12px;
+  animation: l7 1s infinite;
   position: fixed;
-  z-index: 990;
-  margin-top: 50vh;
+  top: 45vh;
 }
-.loader:before,
-.loader:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  box-shadow: 0 0 0 0 #91919144;
-  animation: inherit;
-  animation-delay: -0.5s;
-}
-.loader:after {
-  animation-delay: -1s;
-}
-@keyframes l2 {
-    100% {box-shadow: 0 0 0 40px #82828200}
-}
-
+@keyframes l7 {to{transform: rotate(.5turn)}}
 .flex-loader{
   display: flex;
   justify-content: center;
-  z-index: 999;
   
 }
-
 
 #iconprivce{
   background-image: linear-gradient(#BED9FC,#E9D4E7) ;
@@ -667,7 +653,7 @@ h3::selection{
 
 
 #play{
-   width: 185px;
+   width: 180px;
  }
  
   #bettary{
