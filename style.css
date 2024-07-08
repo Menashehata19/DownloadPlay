@@ -553,7 +553,7 @@ box-shadow: 0px 0px 3px #C6C6C6D1;
 
 #play img{
   width: 60%;
-  
+  aspect-ratio: 1/1 ;
   margin-left: 20%;
   margin-top: 32px;
   border-radius: 10px;
@@ -613,7 +613,9 @@ h3::selection{
   margin-top: 2.5px;
   color: #66D53E;
 }
-
+.new p{
+  color: red;
+}
 
 
 
