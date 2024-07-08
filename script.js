@@ -18,6 +18,9 @@ function toggleDarkMode() {
       
 document.getElementById('share').style.background="white"
 
+document.body.style.overflow="visible"
+
+
 var divc =  document.getElementById('darkone').style.border="solid 1.5px #1A7CDC";
 
 
@@ -94,7 +97,7 @@ localStorage.removeItem('theme');
       
 document.getElementById('backmenu').style.display="none"
  navigator.vibrate(20);
- 
+ document.body.style.overflow="visible"
  document.getElementById('lightmodediv').style.background="#EBF5FF";
 document.getElementById('lightmodediv').style.border="solid 1.5px #1A7CDC";
  
