@@ -663,8 +663,10 @@ h3::selection{
 
 /* responsive media query page website*/
 
-@media only screen and (min-width: 900px) {
- #play{
+@media only screen and (min-width: 860px) {
+
+
+#play{
    width: 185px;
  }
  
