@@ -427,7 +427,7 @@ background-image: linear-gradient(90deg,#6379FF,#D737D7);
   left: 1.5%;
   top: 6px;
   height: 300px;
-  border: solid #FFFFFF 1.8px;
+  border: solid #FFFFFF36 1.8px;
   
   overflow: scroll;
   border-radius: 7px;
@@ -438,19 +438,22 @@ background-image: linear-gradient(90deg,#6379FF,#D737D7);
 
 
 #myUL li a {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ECECEC4A;
   margin-top: -1px; /* Prevent double borders */
-  background-color: #F6F6F6;
+  background-color: #FFFFFF75;
   padding: 11px;
   text-decoration: none;
   font-size: 18px;
   color: #242424;
   display: block;
+  border-radius: 4px;
+  margin: 3px;
+  backdrop-filter: blur(9px);
   
 }
 
 #myUL li a:hover:not(.header) {
-  background-color: #eee;
+  background-color: #EEEEEEB3;
 }
 
 
@@ -529,9 +532,18 @@ margin-top: 10px;
   top: 100px;
   height: 312px;
   border-radius: 10px;
-  background-image: linear-gradient(60deg,#E2CFE7,#BAD6FC);
-box-shadow: 0px 0px 3px #C6C6C6D1;
+  background-image: linear-gradient(60deg,#EBECF0E0,#EBECF0E0);
+
+animation: mina ;
 }
+
+
+@keyframes mina{
+  10%{background-position: 9px 0px 6px 8px};
+  50%{background-position: 10px 5px 10px 6px}
+  100%{background-position: 10px 5px 10px 6px}
+}
+
 
 #flexbox{
   display: flex;
@@ -601,8 +613,8 @@ h3::selection{
 #mod{
   width:55px;
   height: 25px;
-  background: #FCFCFC42;
-  backdrop-filter: blur(9px);
+  background: #FCFCFC12;
+  backdrop-filter: blur(4px);
   position: absolute;
   top: 20px;
   direction: rtl;
@@ -702,7 +714,7 @@ position: absolute;
   margin-bottom: 0px;
   margin-top: 120px;
   z-index: 99;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 30px 30px 0px 0px;
 }
 #fotter h3{
   text-align: center;
@@ -710,20 +722,24 @@ position: absolute;
   letter-spacing: 2px;
   font-size: 15px;
   position: relative;
-  top: 20px;
+  top: 30px;
 }
 .flex-iconfo{
   width: 230px;
   height: 50px;
-  background: #42445A;
+  background: #42445A63;
   margin: auto;
   position: relative;
   top: 30px;
   border-radius: 10px;
- 
+ box-shadow: 0px 0px 5px #343434B5;
 }
 .flex-iconfo p{
   font-size: 15px;
+  top: 6px;
+  position: relative;
+  color: #C9CAD3B5;
+  
 }
 
 
@@ -788,7 +804,7 @@ position: absolute;
   height: 400px;
   position: relative;
   bottom: 0px;
-  background: red;
+  background: #142535;
   margin-bottom: 0px;
   z-index: 99;
   
@@ -855,7 +871,7 @@ position: absolute;
   left: 1%;
   top: 6px;
   height: 300px;
-  border: solid #EBEBEB 1.8px;
+  border: solid #FE0B0B 1.8px;
   overflow: scroll;
   border-radius: 7px;
   
@@ -871,7 +887,7 @@ position: absolute;
   top: 190px;
   height: 312px;
   border-radius: 10px;
-  background-image: linear-gradient(60deg,#E2CFE7,#BAD6FC);
+  background-image: linear-gradient(60deg,#EBECF0E0,#EBECF0E0);
   box-shadow: 0px 0px 3px #C6C6C6D1;
 
 }
