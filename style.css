@@ -217,7 +217,7 @@ color: darkorange;
   top: 110px;
   border-radius: 10px;
   background: #153448;
-  
+  z-index: 9;
   display: none;
 }
 #share p{
