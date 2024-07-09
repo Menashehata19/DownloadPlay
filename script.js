@@ -293,6 +293,23 @@ document.getElementById('seachicon').addEventListener('click',function(){
 
 
 
+function addAltAttrs() {
+    // احصل على جميع الصور
+    let images = document.querySelectorAll("img");
+    
+    // قم بالتحقق من جميع الصور وأضف نص "alt" إذا كان غير موجود (ولكن العنوان موجود)
+    for (let i = 0; i < images.length; i++) {
+        if (images[i].title && !images[i].alt) {
+            images[i].alt = images[i].title;
+        }
+    }
+}
+
+// استدعاء الدالة لتغيير "alt" لجميع الصور
+addAltAttrs();
+
+
+
 document.getElementById('myImage').addEventListener('contextmenu', function(event) {
             event.preventDefault();
             document.getElementById('iconprivce').style.display="block"
@@ -310,30 +327,30 @@ document.getElementById('myImage').addEventListener('contextmenu', function(even
             
             
             
+            
+            
+            
+let images = document.querySelectorAll("img");
+images.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            document.getElementById('iconprivce').style.display="block"
+            
+       setTimeout(imgnone, 2000);
+       
+       
+       
+      function imgnone() {
+        // Tab to edit
+        document.getElementById('iconprivce').style.display="none"
+      }
       
-        
+        });
+            
+            
+            
+            
+            
+            
+            
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Call listener function at run time
-myFunction(x);
-
-// Attach listener function on state changes
-x.addEventListener("change", function() {
-  myFunction(x);
-  
-  
-}); 
+    
