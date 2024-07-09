@@ -117,6 +117,7 @@ var btnback = document.getElementById('backbtnimg');
 
 btnback.addEventListener('click',function(){
 menushare.style.display="none"
+document.body.style.overflow=""
 })
 
 function shareQr() {
