@@ -1,4 +1,13 @@
 
+document.documentElement.setAttribute('translate', 'no');
+
+
+
+function locationapp() {
+  // Tab to edit
+  window.location.href="https://gameplay7-game.netlify.app/"
+}
+
 let header = document.getElementById('header');
 
 
@@ -348,10 +357,34 @@ images.addEventListener('contextmenu', function(event) {
         });
             
             
-            
-            
-            
-            
-            
-
+  function clocemenu9() {
+    // Tab to edit
+    document.getElementById('backmenu').style.display="none"
     
+  }
+            
+            function clocemenu2() {
+    // Tab to edit
+    window.location.href="https://gameplay7-game.netlify.app/"
+    
+    
+  }
+            
+  
+            
+  function apphref() {
+    // Tab to edit
+    window.location.href=""
+  }
+  
+  
+            
+            
+  
+  
+  
+  
+
+  
+
+            
