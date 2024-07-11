@@ -698,12 +698,12 @@ position: absolute;
   color: #203242;
   z-index: -1;
 }
-#arrow2{
+#arrow3{
   width: 43px;
   position: relative;
   left: 15px;
   top: 120px;
-  z-index: -1;
+  z-index: 1;
 }
 
 
@@ -746,6 +746,14 @@ position: absolute;
 }
 
 
+#arrow3{
+  width: 43px;
+  position: relative;
+  left: 15px;
+  margin-top: 2px;
+
+  z-index: 1;
+}
 
 
 /* responsive media query page website*/
@@ -810,7 +818,7 @@ position: absolute;
   position: relative;
   left: 30px;
   top: 120px;
-  z-index: -1;
+  z-index: 1;
 }
 
 #fotter{
@@ -885,7 +893,7 @@ position: absolute;
   left: 1%;
   top: 6px;
   height: 300px;
-  border: solid #FE0B0B 1.8px;
+  border: solid #9696961F 1.8px;
   overflow: scroll;
   border-radius: 7px;
   
@@ -903,7 +911,7 @@ position: absolute;
   border-radius: 10px;
   border-radius: 10px;
 background-image: linear-gradient(60deg, #EBECF087, #FFFFFF87);
-border: solid 1px #9D9D9D21;
+border: solid 1px #81818121;
 
 }
 #share p{
