@@ -1,4 +1,25 @@
 
+// تحقق مما إذا كانت المتصفح يدعم الإشعارات
+if ("Notification" in window) {
+    // تحقق من حالة الإذن الحالية
+    if (Notification.permission === "granted") {
+        // إذا كان الإذن قد تم منحه بالفعل
+        new Notification("مرحباً! لديك إذن لإرسال الإشعارات.");
+    } else if (Notification.permission !== "denied") {
+        // إذا لم يتم منح الإذن أو رفضه مسبقاً، نطلب الإذن من المستخدم
+        Notification.requestPermission().then((permission) => {
+            if (permission === "granted") {
+                new Notification("شكراً لمنحك الإذن! سنرسل لك إشعارات.");
+            }
+        });
+    }
+} else {
+    console.log("الإشعارات غير مدعومة في هذا المتصفح.");
+}
+
+
+
+
 document.documentElement.setAttribute('translate', 'no');
 
 
